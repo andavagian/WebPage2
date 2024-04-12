@@ -1,0 +1,571 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.arrows {
+    font-weight: bold;
+}
+
+nav {
+    width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+#contacts {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px rgba(236,236,238,255) ;
+    padding-bottom: 15px;
+}
+
+#contacts > div {
+    margin-right: 50px;
+    font-size: 14px;
+}
+
+#contacts > div:first-child > i {
+    color: black;
+    font-size: 14px;
+}
+
+#contacts > div:nth-child(2) > a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#contacts > div:nth-child(2):hover > a {
+    color: rgb(143, 38, 17);
+}
+
+#menu {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+#menu > div:first-child {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu > div:first-child > div {
+    width: 44px;
+    height: 44px;
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(166,103,93,1) 100%);
+}
+
+#menu > div:first-child > p {
+    font-size: 21px;
+}
+
+#menu > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+#menu > div:nth-child(2) > ul  {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu > div:nth-child(2) > ul > li {
+    margin-right: 30px;
+}
+
+#menu > div:nth-child(2) > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu > button {
+    width: 210px;
+    height: 50px;
+    border: solid 1px rgba(120,12,11,255);
+    background-color: white;
+    outline: none;
+    color: rgba(120,12,11,255);
+    cursor: pointer;
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+}
+
+#categories > li:first-child:hover > .dropdown {
+    display: block;
+}
+
+.dropdown_menu {
+    margin-top: 55px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#dropdown_menu1 {
+    width: 240px;
+    height: 116px;
+}
+
+#dropdown_menu1 > ul > li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#dropdown_menu1 > ul > li:first-child > a:hover .dropdown {
+    display: block;
+}
+
+.dropdown_menu > ul > li {
+    list-style: none;
+}
+
+.dropdown_menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+#categories > li:nth-child(3):hover > .dropdown {
+    display: block;
+}
+
+#dropdown_menu2 {
+    width: 1200px;
+    position: relative;
+    left: -400px;
+}
+
+#dropdown_menu2 > ul {
+    display: flex;
+    flex-direction: row;
+    padding: 45px 0 50px 0;
+
+}
+
+#dropdown_menu2 > ul > li {
+    padding: 0 30px 0 50px;
+    border-right: solid 1px rgba(236,236,238,255);
+    width: 300px;
+}
+
+#dropdown_menu2 > ul > li:nth-child(4) {
+    border: 0;
+}
+
+#dropdown_menu2 > ul > li > ul > li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#dropdown_menu2 > ul > li > ul {
+    margin-top: 40px;
+}
+
+#dropdown_menu2 > ul > li > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+#categories > li:nth-child(4):hover > .dropdown {
+    display: block;
+}
+
+#categories > li:nth-child(6):hover > .dropdown {
+    display: block;
+}
+
+#background_image {
+    background-image: url(../image/slider-slide-3.jpg);
+    margin: 0; 
+    padding: 0; 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#background_image > p:first-child {
+    font-size: 20px;
+}
+
+#background_image > p:nth-child(2) {
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+#background_image > p:nth-child(3) {
+    font-size: 18px;
+}
+
+#choose {
+    width: 1170px;
+    height: 210px;
+    background-color: white;
+    box-shadow: 0 2px 18px 0 rgba(129,162,182,.2);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -100px;
+    z-index: 2;
+}
+
+#choose > div {
+    border-right: solid 1px rgba(236,236,238,255);
+    margin-right: 20px;
+    padding: 20px;
+}
+
+#choose > div:first-child > select {
+    width: 220px;
+    height: 50px;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+#choose > div:nth-child(2) > select {
+    width: 220px;
+    height: 50px;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#choose > div:nth-child(3) > select {
+    width: 109px;
+    height: 50px;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#choose > div:nth-child(4) > select {
+    width: 109px;
+    height: 50px;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#choose > div:first-child > select:hover {
+    background-color: rgba(248,248,248,255);
+}
+
+#choose > div:nth-child(2) > select:hover {
+    background-color: rgba(248,248,248,255);
+}
+
+#choose > div:nth-child(3) > select:hover {
+    background-color: rgba(248,248,248,255);
+}
+
+#choose > div:nth-child(4) > select:hover {
+    background-color: rgba(248,248,248,255);
+}
+
+#choose > button {
+    background-color: rgba(120,12,11,255);
+    border: 0;
+    color: white;
+    width: 225px;
+    height: 74px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.content {
+    background-color: rgba(248,248,248,255);
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    height: 680px;
+    position: relative;
+    top: -150px;
+    z-index: 1;
+    align-items: center;
+}
+
+.content > div:first-child {
+    width: 500px;
+    padding: 0 15px;
+}
+
+.content > div:nth-child(2) {
+    padding: 15px;
+    background-color: white;
+}
+
+.content > div:nth-child(2) > div {
+    width: 500px;
+    height: 442px;
+    background-repeat: no-repeat;
+    background-image: url(../image/about-1-622x456.jpg);
+    margin: 0; 
+    padding: 0; 
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.content > div:first-child > p:nth-child(2) {
+    font-size: 42px;
+    margin: 18px 0 40px 0;
+}
+
+.content > div:first-child > p:nth-child(3) {
+    line-height: 25px;
+}
+
+.content > div:first-child > button {
+    width: 163px;
+    height: 50px;
+    border: solid 1px rgba(120,12,11,255);
+    background-color: rgba(248,248,248,255);
+    outline: none;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+.content1 {
+    text-align: center;
+}
+
+.content1 > p:first-child {
+    font-size: 14px;
+}
+
+.content1 > h3 {
+    font-size: 44px;
+    margin: 18px 0 40px 0;
+}
+
+.content1 > p:nth-child(3) {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.items {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#item1 {
+    width: 370px;
+    margin-top: 50px;
+}
+
+#item1 > div:first-child {
+    width: 370px;
+    height: 277px;
+    padding: 15px;
+    background-color: rgba(248,248,248,255);
+}
+
+#item1 > div:first-child > div {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../image//item1.jpeg);
+    margin: 0; 
+    padding: 0; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+#item1 > div:nth-child(2) > p:first-child {
+    font-size: 44px;
+    margin-top: 20px;
+}
+
+#item1 > div:nth-child(2) > p:nth-child(2) > span:first-child {
+    font-size: 38px;
+    position: relative;
+    top: -30px;
+}
+
+#item1 > div:nth-child(2) > p:nth-child(2) > span:nth-child(2) {
+    font-size: 110px;
+}
+
+#item1 > div:nth-child(2) > p:nth-child(2) > span:nth-child(3) {
+    font-size: 30px;
+}
+
+#item1 > div:nth-child(2) > ul {
+    margin-top: 10px;
+    position: relative;
+    left: 20px;
+}
+
+#item1 > div:nth-child(2) > ul > li {
+    font-size: 20px;
+}
+
+#item1 > div:nth-child(2) > button {
+    background-color: rgba(120,12,11,255);
+    border: 0;
+    color: white;
+    width: 163px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+    
+}
+
+#item2 {
+    width: 370px;
+    margin-top: 50px;
+}
+
+#item2 > div:first-child {
+    width: 370px;
+    height: 277px;
+    padding: 15px;
+    background-color: rgba(248,248,248,255);
+}
+
+#item2 > div:first-child > div {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../image//item2.jpeg);
+    margin: 0; 
+    padding: 0; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+#item2 > div:nth-child(2) > p:first-child {
+    font-size: 44px;
+    margin-top: 20px;
+}
+
+#item2 > div:nth-child(2) > p:nth-child(2) > span:first-child {
+    font-size: 38px;
+    position: relative;
+    top: -30px;
+}
+
+#item2 > div:nth-child(2) > p:nth-child(2) > span:nth-child(2) {
+    font-size: 110px;
+}
+
+#item1 > div:nth-child(2) > p:nth-child(2) > span:nth-child(3) {
+    font-size: 30px;
+}
+
+#item2 > div:nth-child(2) > ul {
+    margin-top: 10px;
+    position: relative;
+    left: 20px;
+}
+
+#item2 > div:nth-child(2) > ul > li {
+    font-size: 20px;
+}
+
+#item2 > div:nth-child(2) > button {
+    background-color: rgba(120,12,11,255);
+    border: 0;
+    color: white;
+    width: 163px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+    
+}
+
+#item3 {
+    width: 370px;
+    margin-top: 50px;
+}
+
+#item3 > div:first-child {
+    width: 370px;
+    height: 277px;
+    padding: 15px;
+    background-color: rgba(248,248,248,255);
+}
+
+#item3 > div:first-child > div {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../image//item3.jpeg);
+    margin: 0; 
+    padding: 0; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+#item3 > div:nth-child(2) > p:first-child {
+    font-size: 44px;
+    margin-top: 20px;
+}
+
+#item3 > div:nth-child(2) > p:nth-child(2) > span:first-child {
+    font-size: 38px;
+    position: relative;
+    top: -30px;
+}
+
+#item3 > div:nth-child(2) > p:nth-child(2) > span:nth-child(2) {
+    font-size: 110px;
+}
+
+#item3 > div:nth-child(2) > p:nth-child(2) > span:nth-child(3) {
+    font-size: 30px;
+}
+
+#item3 > div:nth-child(2) > ul {
+    margin-top: 10px;
+    position: relative;
+    left: 20px;
+}
+
+#item3 > div:nth-child(2) > ul > li {
+    font-size: 20px;
+}
+
+#item3 > div:nth-child(2) > button {
+    background-color: rgba(120,12,11,255);
+    border: 0;
+    color: white;
+    width: 163px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+    
+}
